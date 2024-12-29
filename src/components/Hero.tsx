@@ -10,33 +10,27 @@ const Hero = () => {
       className="pt-24 pb-16 bg-gradient-to-br from-blue-50 to-white overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center justify-center">
           <div className="space-y-8 px-4 sm:px-6 lg:px-8">
-            <AnimatedSection direction="left">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Transformamos suas ideias em soluções digitais personalizadas
-              </h1>
-            </AnimatedSection>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+              Transformamos suas ideias em soluções digitais personalizadas
+            </h1>
 
-            <AnimatedSection direction="left" delay={200}>
-              <p className="text-xl text-gray-600">
-                Tecnologia de ponta, design moderno e suporte contínuo para seu
-                sucesso online.
-              </p>
-            </AnimatedSection>
+            <p className="text-xl text-gray-600">
+              Tecnologia de ponta, design moderno e suporte contínuo para seu
+              sucesso online.
+            </p>
 
-            <AnimatedSection direction="left" delay={400}>
-              <button
-                onClick={() => {
-                  window.location.href =
-                    "https://wa.me/5511949880392?text=Olá! Estou visitando seu website e gostaria de saber mais sobre os serviços.";
-                }}
-                className="group flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-all duration-300 hover:gap-4"
-              >
-                Fale com um Especialista
-                <ArrowRight className="transition-transform duration-300" />
-              </button>
-            </AnimatedSection>
+            <button
+              onClick={() => {
+                window.location.href =
+                  "https://wa.me/5511949880392?text=Olá! Estou visitando seu website e gostaria de saber mais sobre os serviços.";
+              }}
+              className="group flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-all duration-300 hover:gap-4"
+            >
+              Fale com um Especialista
+              <ArrowRight className="transition-transform duration-300" />
+            </button>
           </div>
 
           <AnimatedSection direction="right" delay={300}>
